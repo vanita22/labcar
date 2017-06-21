@@ -225,7 +225,7 @@
 	}
 }
 
-/*box-5*/
+/*box-3*/
 
 #box-5{
 	background-image: url(../assets/img/conduce.jpg);
@@ -272,3 +272,55 @@
 		padding: 10px 15px;
 	}
 }
+
+/*box-4*/
+
+#box-6{
+	background-color: #f7b617;
+	width: 100%;
+	height: auto;			
+}
+
+#box-g{
+	background-color: transparent;
+	flex-direction: column;
+	margin-top: 30px;
+	margin-left: 50px;
+}
+
+#box-h{
+	width: 100%;
+	height: auto;
+	border: 1px solid white;
+}
+
+.box-i input{
+	background-color: transparent;
+	width: 450px;
+	height: 40px;
+	border: 1px solid white;
+	border-radius: 7px;
+	margin-left: 10px;
+}
+
+.box-j input{
+	background-color: transparent;
+	width: 450px;
+	height: 40px;
+	border: 1px solid white;
+	border-radius: 7px;
+	margin-left: 10px;
+}
+
+#box-g .btn{
+	font-weight: bold;
+	margin-left: 100px;
+	margin-bottom: 30px;
+}
+
+@media (max-width: 700px){
+	#box-h{
+		visibility: hidden;
+	}
+}
+
