@@ -1,0 +1,37 @@
+/*menu*/
+
+#menu{
+	padding: 5px 60px;
+	background-color: white;	
+}
+
+#menu ul li a{
+	color: black;
+	margin-right: 20px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+/*box-1*/
+
+#box-1{
+	position: relative;
+}
+
+#box-a{	
+	background-color: #f7b617;
+	width: 600px;
+	height: 500px;
+	float: right;
+	position: relative;
+	margin-top: -700px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media (max-width: 700px){
+	#box-a{
+		width: 330px;
+	}
+}
+
