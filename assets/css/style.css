@@ -1,3 +1,6 @@
+*{
+	color: white;
+}
 /*menu*/
 
 #menu{
@@ -18,20 +21,104 @@
 	position: relative;
 }
 
+/*caja desktop*/
 #box-a{	
 	background-color: #f7b617;
 	width: 600px;
 	height: 500px;
 	float: right;
 	position: relative;
-	margin-top: -700px;
+	margin-top: -580px;
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: column;
+	padding: 30px;
 }
 
 @media (max-width: 700px){
 	#box-a{
-		width: 330px;
+		visibility: hidden;
 	}
 }
+
+.linea-a{
+	border: 1px solid white;
+	width: 200px;	
+	display: inline-block;
+	margin-right: 30px;
+	margin-left: 
+}
+
+.linea-b{
+	border: 1px solid white;
+	width: 200px;	
+	display: inline-block;
+	margin-left: 30px;	
+}
+
+.btn{
+	background-color: white;
+	width: 200px;
+	height: 30px;
+	border-radius: 6px;
+	color: black;
+}
+
+.small-a{
+	display: inline-block;
+}
+
+.small-a h3{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.small-a img{
+	display: inline-block;
+}
+
+.small-b{
+	display: inline-block;
+}
+
+#box-a p{	
+	font-size: 18px;
+}
+
+#box-a h1{
+	font-weight: bold;	
+}
+
+/*caja movil*/
+
+#box-b{	
+	background-color: #f7b617;
+	width: 350px;
+	height: 300px;
+	float: right;
+	position: relative;
+	margin-top: -500px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	padding: 30px;
+}
+
+@media (min-width: 700px){
+	#box-b{
+		visibility: hidden;
+	}
+}
+
+.btn2{
+	background-color: white;
+	width: 200px;
+	height: 30px;
+	border-radius: 6px;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 3px 15px;
+}
+
 
