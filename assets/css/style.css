@@ -8,6 +8,13 @@
 	background-color: white;	
 }
 
+@media (max-width: 700px){
+	#menu-p{
+		display: inline-flex;
+		flex-direction: row;
+	}
+}
+
 #menu ul li a{
 	color: black;
 	margin-right: 20px;
@@ -119,6 +126,15 @@
 @media (min-width: 700px){
 	#box-b{
 		visibility: hidden;
+	}
+}
+
+@media (max-width: 700px){
+	#box-a{
+		visibility: hidden;
+	}
+	#box-b{
+		width: 255px;
 	}
 }
 
@@ -278,7 +294,8 @@
 #box-6{
 	background-color: #f7b617;
 	width: 100%;
-	height: auto;			
+	height: auto;
+	margin-left: 1px;			
 }
 
 #box-g{
@@ -322,5 +339,90 @@
 	#box-h{
 		visibility: hidden;
 	}
+	#box-g{
+		margin-left: 10px;
+	}
+	#box-g input{
+		width: auto;
+	}
+	#box-g .btn{
+		margin-left: 10px;
+	}
 }
+
+/*footer*/
+
+footer{
+	background-color: #2b2b2b;
+	width: 100%;
+	height: auto;
+	padding: 40px;
+}
+
+#box7{
+	margin-top: 20px;
+}
+
+#box-o img{
+	margin-bottom: 10px;
+}
+
+.linea{
+	border: 1px solid white;
+	width: 100%;
+	margin-bottom: 30px;	
+}
+
+#box-k i{	
+	margin-right: 10px;
+}
+
+#box-n img{
+	margin-bottom: 20px;
+}
+
+@media (max-width: 450px){
+	#box-7{
+		visibility: hidden;		
+	}	
+	#box-q{
+		visibility: visible;
+		margin-top: -1200px;
+		padding: 5px 15px;
+		margin-right: -20px;
+	}
+	#box-q img{
+		width: 120px;
+	}
+}
+
+@media (min-width: 800px){
+	#box-7{
+		visibility: visible;
+		margin-bottom: -400px;
+	}
+	#box-q{
+		visibility: hidden;
+	}
+} 
+
+@media (min-width: 450px) and (max-width: 800px){
+	#box-7{
+		visibility: hidden;		
+	}	
+	#box-q{
+		visibility: visible;
+		margin-top: -1100px;		
+		margin-right: 20px;
+
+	}
+	#box-p{
+		margin-top: -700px;
+	}
+	footer{
+		height: 120vh;
+	}
+}
+
+
 
