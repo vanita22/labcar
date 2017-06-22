@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Labcar</title>
-
   </head>
+  
   <body>
     
     <!--menu-->
@@ -126,20 +126,33 @@
     <!--box-4-->
     <div class="container-fluid">
       <div class="row" id="box-6">
+
         <div class="col-md-6" id="box-g">
           <h1 class="color1">Tarifas</h1>
           <h3 class="color1">Consulta las tarifas LabCar aquí</h3><br><br>
             <div class="box-i">
-              <img src="assets/img/circulo.png"><input type="" name="" placeholder="Ingrese punto de partida" class="color1">
+              <img src="assets/img/circulo.png"><input id="origin-input" class="controls" type="text" placeholder="Ingrese punto de partida" class="color1">
             </div><br>
             <div class="box-j">
-              <img src="assets/img/flecha.png"><input type="" name="" placeholder="Ingrese un destino" class="color1">
+              <img src="assets/img/flecha.png"><input id="destination-input" class="controls" type="text" placeholder="Ingrese un destino" class="color1">
             </div><br><br>
-          <span class="btn">¡TRAZAR UNA RUTA!</span>
+          <span class="btn" onClick="valor();">¡TRAZAR UNA RUTA!</span>
+          <div id="result"><p></p></div>
         </div>
 
         <div class="col-md-6" id="box-h">
-          <div class="map"></div>
+          <div id="map" style="width:100%; height:410px">
+            <div id="mode-selector" class="controls">
+              <input type="radio" name="type" id="changemode-walking" checked="checked">
+              <label for="changemode-walking">Walking</label>
+
+              <input type="radio" name="type" id="changemode-transit">
+              <label for="changemode-transit">Transit</label>
+
+              <input type="radio" name="type" id="changemode-driving">
+              <label for="changemode-driving">Driving</label>
+            </div>
+          </div>          
         </div>
       </div>
     </div>
@@ -206,7 +219,6 @@
 
     </footer>
 
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -214,5 +226,7 @@
     <script src="assets/js/main.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSKlKKkygyjOV3pSPFqW1X17D-waSjKfs&libraries=drawing&callback=initMap"
+         async defer></script>
   </body>
 </html>
